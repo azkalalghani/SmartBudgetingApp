@@ -64,10 +64,10 @@ pygame.mixer.init()
 # Load sounds
 try:
     # Place your sound files in the same directory as this script
-    pygame.mixer.music.load('background_music.mp3')  # Background music
-    remove_sound = pygame.mixer.Sound('remove_sound.wav')  # Sound for removing particles
-    move_sound = pygame.mixer.Sound('move_sound.mp3')  # Sound for moving clusters
-    pause_sound = pygame.mixer.Sound('pause_sound.wav')  # Sound when game is paused/unpaused
+    pygame.mixer.music.load('assets/soundsbackground_music.mp3')  # Background music
+    remove_sound = pygame.mixer.Sound('assets/soundsremove_sound.wav')  # Sound for removing particles
+    move_sound = pygame.mixer.Sound('assets/soundsmove_sound.mp3')  # Sound for moving clusters
+    pause_sound = pygame.mixer.Sound('assets/soundspause_sound.wav')  # Sound when game is paused/unpaused
 except pygame.error as e:
     print(f"Error loading sound files: {e}")
     remove_sound = None
